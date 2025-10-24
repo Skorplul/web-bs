@@ -38,6 +38,10 @@ body{
   margin:0 auto;
   padding:0 1.25rem;
 }
+.container small{
+  color: #a9c7e4;
+  font-size:0.9rem;
+}
 
 /* Header */
 .site-header{
@@ -128,7 +132,7 @@ body{
   padding:0.575rem 0.9rem;
   border-radius:10px;
   text-decoration:none;
-  color: #8fa5d8;
+  color: #c3d6ff;
   background:transparent;
   border:1px solid rgba(15,23,42,0.06);
   font-weight:700;
