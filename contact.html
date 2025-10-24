@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt — Skorp</title>
+  <link rel="icon" href="pfp.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo"><a href="home.html">Webseite von Skorp</a></h1>
+                <nav class="nav">
+                    <a href="home.html" class="nav-link">Startseite</a>
+                    <a href="about_me.html" class="nav-link">Über Mich</a>
+                    <a href="https://github.com/Skorp" class="nav-link">GitHub</a>
+                    <a href="contact.html" class="nav-link active">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+        <main class="site-main">
+            <section class="contact container">
+                <h1>Kontakt</h1>
+                <p>Wenn du Fragen hast oder mit mir in Kontakt treten möchtest, kannst du mich über die folgenden Wege erreichen:</p>
+                <ul>
+                    <li>Discord: <a href="https://discord.com/users/504875989776596992" target="_blank" rel="noopener">@skorp1.0</a></li>
+                    <li>E-Mail: <a href="mailto:info@skorplul.de">info@skorplul.de</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Skorp - Alle Rechte vorbehalten.</p>
+            </div>
+        </footer>
+
+        <script>
+        // simple dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    </body>
+</html>

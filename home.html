@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skorp - Willkommen</title>
+    <link rel="icon" href="pfp.ico" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo"><a href="home.html">Webseite von Skorp</a></h1>
+            <nav class="nav">
+                <a href="home.html" class="nav-link active">Startseite</a>
+                <a href="about_me.html" class="nav-link">Über Mich</a>
+                <a href="https://github.com/Skorplul" class="nav-link" target="_blank" rel="noopener noreferrer">Projekte</a>
+                <a href="impressum.html" class="nav-link">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h2 class="logo">Willkommen</h2>
+                <p>Ich bin Skorp, ein kleiner lernender Developer für aktuell nur C# Projekte, aber wie man sehen kann expandiere ich aktuell etwas! :D</p>
+                <div class="cta-box">
+                    <div>
+                        <h3>Etwas über mich</h3>
+                        <p>Ich habe vor ein paar Jahren angefangen mir das Programmieren beizubringen und arbeite hauptsächlich mit...</p>
+                    </div>
+                        <a class="btn primary" href="about_me.html">Über Mich</a>
+                </div>
+                <div class="cta-box">
+                    <div>
+                        <h3>Interesse an Zusammenarbeit?</h3>
+                        <p>Wenn du Fragen hast oder an einem Projekt arbeiten möchtest, kontaktiere mich gerne.</p>
+                    </div>
+                    <a class="btn primary" href="contact.html">Kontakt</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> My Site — Built with HTML & CSS</small>
+            <div style="margin-top:0.75rem;">
+                <a class="btn" href="impressum.html" aria-label="Impressum">Impressum</a>
+                <a class="btn" href="datenschutz.html" aria-label="Datenschutz">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // simple dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

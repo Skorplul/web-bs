@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Über Mich — Skorp</title>
+  <link rel="icon" href="pfp.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <h1 class="logo"><a href="home.html">Webseite von Skorp</a></h1>
+            <nav class="nav">
+                <a href="home.html" class="nav-link">Startseite</a>
+                <a href="about_me.html" class="nav-link active">Über Mich</a>
+                <a href="https://github.com/Skorplul" class="nav-link" target="_blank" rel="noopener noreferrer">Projekte</a>
+                <a href="impressum.html" class="nav-link">Kontakt</a>
+            </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h2>Über Mich</h2>
+        <p>Hallo — ich bin Skorp. Ich lerne Programmierung primär in C#, experimentiere aber mit neuen Technologien und gestalte kleine Projekte nebenbei. Hier findest du persönliche Notizen, Gedanken zum Lernen und kleine Projekt-Updates.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="home.html">Zurück zur Startseite</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" aria-label="Beiträge">
+      <article class="card nav-link"><a href="csharp_journey.html">
+        <header>
+          <h3>Wie ich mit C# angefangen habe</h3>
+          <p class="muted"><time datetime="2024-10-23">23. Oktober 2024</time> · Kategorie: Lernen</p>
+        </header>
+        <p>Mein erster Kontakt mit C# war durch ein kleines Konsolenprojekt. Seitdem habe ich mich tiefer mit Objektorientierung, LINQ und einfachen Desktop-Apps beschäftigt. Ich dokumentiere hier kurze Tipps und Erkenntnisse.</p>
+      </a></article>
+
+      <article class="card nav-link"><a href="tools.html">
+        <header>
+          <h3>Kleine Tools, große Wirkung</h3>
+          <p class="muted"><time datetime="2025-02-10">10. Februar 2025</time> · Kategorie: Tools</p>
+        </header>
+        <p>Tools wie einfache Skripte oder kleine Automatisierungen sparen Zeit. Ich schreibe oft kleine Hilfsprogramme, die wiederkehrende Aufgaben vereinfachen — oft als Übung und Referenz.</p>
+      </a></article>
+
+      <article class="card nav-link"><a href="roadmap.html">
+        <header>
+          <h3>Was ich als Nächstes lernen möchte</h3>
+          <p class="muted"><time datetime="2025-06-01">1. Juni 2025</time> · Kategorie: Roadmap</p>
+        </header>
+        <p>Momentan stehen Web-Technologien und das Erweitern meiner C# Kenntnisse auf dem Plan. Ich probiere auch kleine UI-Experimente und lerne Grundlagen zu Web-Deployment.</p>
+      </article>
+    </a></section>
+
+    <section class="cta container">
+      <div class="cta-box">
+        <div>
+          <h3>Interesse an Zusammenarbeit?</h3>
+          <p>Wenn du Fragen hast oder an einem Projekt arbeiten möchtest, kontaktiere mich gerne.</p>
+        </div>
+        <div>
+          <a class="btn primary" href="contact.html">Kontakt</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Webseite von Skorp — Erstellt mit HTML & CSS</small>
+      <div style="margin-top:0.75rem;">
+        <a class="btn" href="impressum.html" aria-label="Impressum">Impressum</a>
+        <a class="btn" href="datenschutz.html" aria-label="Datenschutz">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
