@@ -96,7 +96,12 @@ body{
   font-weight:600;
   transition:all .18s ease;
 }
-.nav-link:hover{ background:rgba(37,99,235,0.06); color:var(--accent-2); transform:translateY(-1px); box-shadow: var(--shadow-sm);}
+.nav-link:hover{ 
+  background:rgba(37,99,235,0.06);
+  color:var(--accent-2);
+  transform:translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
 .nav-link.active{
   background: linear-gradient(90deg, rgba(37,99,235,0.08), rgba(14,165,164,0.06));
   color:var(--accent-2);
@@ -194,6 +199,85 @@ body{
   outline-offset: 4px;
 }
 
+/* Expandable cards (contact page) */
+.expand-card{
+  overflow:visible;
+  margin-bottom:0.75rem;
+  border-radius:12px;
+}
+.card-toggle{
+  -webkit-appearance:none;
+  appearance:none;
+  width:100%;
+  text-align:left;
+  background:transparent;
+  border:0;
+  padding:0.9rem 1.25rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  cursor:pointer;
+  color: inherit;
+}
+.card-toggle h3{ margin:0; font-size:1rem; }
+.card-toggle p{ margin:0; font-size:0.9rem; color:var(--muted); }
+
+.caret{
+  transition: transform .22s ease;
+  color:var(--muted);
+  font-size:1.1rem;
+}
+
+/* collapsed container — compact, no padding here so closed cards have no gap */
+.card-body{
+  padding:0;
+  overflow:hidden;
+  border-top:1px solid rgba(255,255,255,0.02);
+}
+
+/* inner content that is actually animated: no padding here; spacing moved to children */
+.card-inner{
+  padding:0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  overflow:hidden;
+  max-height:0;
+  opacity:0;
+  transition: max-height .36s ease, opacity .22s ease;
+}
+
+/* spacing for content inside (static, part of scrollHeight) */
+.card-inner > p{
+  margin:0;
+  padding:0.75rem 1.25rem 0 1.25rem;
+  color:var(--muted);
+}
+.card-actions{
+  display:flex;
+  gap:0.6rem;
+  margin-top:0.75rem;
+  flex-wrap:wrap;
+  padding:0 1.25rem 1.25rem 1.25rem; /* padding moved here so it's included in measured height */
+}
+.card-actions .btn{
+  padding:0.5rem 0.8rem;
+  border-radius:8px;
+  background: rgba(255,255,255,0.03);
+  color: #e6eef6;
+  border:1px solid rgba(255,255,255,0.04);
+  font-weight:700;
+  text-decoration:none;
+}
+.card-actions .btn:hover{
+  transform:none;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+}
+
+/* visible state */
+.expand-card.expanded .card-inner{
+  opacity:1;
+}
+
 /* CTA section */
 .cta{
   padding:2rem 0;
@@ -240,6 +324,9 @@ body{
   .btn.primary{ min-width:auto; white-space:normal; padding-left:0.9rem; padding-right:0.9rem; }
   .cta-box{ flex-direction:column; align-items:flex-start; gap:0.5rem; }
   .cta-box h3{ white-space:normal; }
+  .card-toggle{ padding:0.75rem; }
+  .card-body{ padding-left:0.75rem; padding-right:0.75rem; }
+  .card-actions{ gap:0.5rem; }
 }
 
 /* small utilities */

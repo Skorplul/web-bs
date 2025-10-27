@@ -24,7 +24,69 @@
         <main class="site-main">
             <section class="contact container">
                 <h1>Kontakt</h1>
-                <p>Am besten erreicht man mich über Discord, da die Mail aktuell ein Platzhalter ist.<br>Ich kann aktuell ausschließlich über bei C# Aufgaben helfen. Wenn mehr Infos über meine bisherigen Projekte/Fertigkeiten benötigt werden, kann gerne auf GitHub nachgeschaut werden, oder einfach fragen!<br>Wer mich über Discord kontaktiert, bitte immer eine erste Nachricht mit dem Anliegen schicken, sonst ignorier ich potentiell sowas.</p>
+                <p>Am besten erreicht man mich über Discord, da die Mail aktuell ein Platzhalter ist.<br>Ich kann aktuell ausschließlich bei C# Aufgaben helfen, welche etwas mit Games in Unity zu tun haben. Wenn mehr Infos über meine bisherigen Projekte/Fertigkeiten benötigt werden, kann gerne auf GitHub nachgeschaut werden, oder einfach fragen!<br>Wer mich über Discord kontaktiert, bitte immer eine erste Nachricht mit dem Anliegen schicken, sonst ignorier ich potentiell sowas.</p>
+                
+                <section class="features container" aria-label="Angebote">
+                  <article class="card expand-card">
+                    <button class="card-toggle" aria-expanded="false">
+                      <div>
+                        <h3>Kategorie: Discord</h3>
+                        <p class="muted">Schnelle Kontaktmöglichkeit</p>
+                      </div>
+                      <span class="caret" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="card-body">
+                      <div class="card-inner">
+                        <p>Am besten über Discord erreichbar.</p>
+                        <div class="card-actions">
+                          <a class="btn" href="https://discord.com/users/504875989776596992" target="_blank" rel="noopener noreferrer">Discord öffnen</a>
+                          <a class="btn" href="mailto:info@skorplul.de">E-Mail</a>
+                          <a class="btn" href="impressum.html">Impressum</a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card expand-card">
+                    <button class="card-toggle" aria-expanded="false">
+                      <div>
+                        <h3>Kategorie: Unity / C# Spiele</h3>
+                        <p class="muted">Hilfe bei Game-bezogenen Projekten</p>
+                      </div>
+                      <span class="caret" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="card-body">
+                      <div class="card-inner">
+                        <p>Ich unterstütze bei Unity- und C#-Fragen rund um Spieleentwicklung.</p>
+                        <div class="card-actions">
+                          <a class="btn" href="https://github.com/Skorplul" target="_blank" rel="noopener noreferrer">GitHub</a>
+                          <a class="btn" href="contact.html">Projektanfrage</a>
+                          <a class="btn" href="mailto:info@skorplul.de">E-Mail</a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="card expand-card">
+                    <button class="card-toggle" aria-expanded="false">
+                      <div>
+                        <h3>Kategorie: Andere Sachen</h3>
+                        <p class="muted">Allgemeine Anfragen</p>
+                      </div>
+                      <span class="caret" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="card-body">
+                      <div class="card-inner">
+                        <p>Sonstige Anfragen und kleine Hilfsaufträge.</p>
+                        <div class="card-actions">
+                          <a class="btn" href="mailto:info@skorplul.de">E-Mail</a>
+                          <a class="btn" href="https://github.com/Skorplul" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+
                 <ul>
                     <li>Discord: <a href="https://discord.com/users/504875989776596992" target="_blank" rel="noopener">@skorp1.0</a></li>
                     <li>E-Mail: <a href="mailto:info@skorplul.de">info@skorplul.de</a></li>
@@ -33,13 +95,10 @@
         </main>
         <footer class="site-footer">
             <div class="container">
-                <small>&copy; <span id="year"></span> Skorp - Alle Rechte vorbehalten.</small>
+                <small>&copy; <span id="year"></span> Skorp - Alle Rechte vorbehalten.<br>Disclaimer: Diese Website ist NICHT ernst gemeint und nur mein persönliches Übungsprojekt.</small>
             </div>
         </footer>
 
-        <script>
-        // simple dynamic year
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+        <script src="contact.js"></script>
     </body>
 </html>
